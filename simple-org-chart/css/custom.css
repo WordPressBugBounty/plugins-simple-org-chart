@@ -1,0 +1,203 @@
+
+/* general */
+.clear {
+    clear: both;
+}
+
+.select2-container {
+    min-width: 200px;
+}
+
+/* list stuff */
+#org{
+    background-color 	: white;
+    margin 				: 10px;
+    padding 			: 10px;
+}
+
+#show-list{
+    cursor 				: pointer;
+}
+
+.wp-admin .wrap.orgchart {
+    background: #fff;
+    border-top: 1px solid #eee;
+    box-shadow: 0 0px 8px 3px rgb(230, 232, 233);
+}
+.wp-admin div#chart {
+    min-height: 60vh;
+}
+/* Custom chart styling */
+.jOrgChart {
+    margin                : 10px;
+    padding               : 20px;
+}
+
+/* Custom node styling */
+.jOrgChart .node {
+    position: unset;
+    box-shadow: 0 1px 2px 1px rgba(230, 232, 233, 0.57);
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border: 0px solid white;
+    color: #404040;
+}
+.node p{
+    font-family 	: tahoma;
+    font-size 		: 10px;
+    line-height 	: 11px;
+    padding 		: 2px;
+}
+
+
+.jOrgChart small {
+
+    font-style: italic;
+    clear: both;
+    display: block;
+}
+
+
+.jOrgChart .node a {
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 0px 0 0 currentColor;
+    position: relative;
+}
+
+
+.jOrgChart .overlay1 {
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.jOrgChart .overlay1:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.jOrgChart .popup1 {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0;
+    width: 300px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    text-align: left;
+}
+
+.jOrgChart .popup1 h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.jOrgChart .popup1 .close1 {
+    line-height: 1;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    transition: all 2ms;
+    font-size: 23px;
+    font-weight: normal;
+    text-decoration: none !important;
+    color: #ffffff;
+    box-shadow: 0 0 0;
+}
+.jOrgChart .popup1 .close1:hover {
+    color: #06D85F;
+}
+.jOrgChart .popup1 .content1 {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+
+    .jOrgChart .popup1{
+        width: 70%;
+    }
+}
+
+.oinline {    display: inline-block;
+    padding-left: 10px;
+    padding-top: 20px;}
+
+.org_bottom {
+    margin-top: 40px;
+    padding: 6px;
+    border-top: 1px solid #eee;
+}
+.org_bottom .submit {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+.chart_saved {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+.chart_saved span {
+    border-radius: 4px;
+    background: #fff;
+    width: 200px;
+    text-align: center;
+    margin: 50vh auto;
+    position: relative;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+}
+
+
+span.oblock {
+    line-height: 1.5;
+    display: block;
+    font-size: 14px;
+    margin: 0px 0;
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.jOrgChart .close {
+    opacity: 0.3;
+    padding-top: 16px;
+    display: block;
+}
+.jOrgChart .close:hover {
+    opacity: 1;
+}
+.jOrgChart .close:before, .close:after {
+    position: absolute;
+    left: 17px;
+    content: ' ';
+    height: 11px;
+    width: 2px;
+    background-color: #e02626;
+    bottom: 3px;
+}
+.jOrgChart .close:before {
+    transform: rotate(45deg);
+}
+.jOrgChart .close:after {
+    transform: rotate(-45deg);
+}
+
+div#s2id_comboBox, div#s2id_user_dropdown {
+    width: 150px;
+}
